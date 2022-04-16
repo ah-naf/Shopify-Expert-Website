@@ -6,22 +6,22 @@ export default function Portfolio() {
   const list = [
     {
       title: "Women's Clothing Store",
-      img: "/portfolio1.png",
+      img: "/portfolio1.jpeg",
       
     },
     {
       title: "Tech Accessories Store",
-      img: "/portfolio2.png",
+      img: "/portfolio2.jpeg",
       
     },
     {
       title: "Men's Clothing Store",
-      img: "/portfolio3.png",
+      img: "/portfolio3.jpeg",
       
     },
     {
       title: "Heath & Beauty Store",
-      img: "/portfolio4.png",
+      img: "/portfolio4.jpeg",
       
     }
   ];

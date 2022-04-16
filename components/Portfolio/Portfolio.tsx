@@ -40,14 +40,14 @@ export default function Portfolio() {
                     objectFit="cover"
                     src={item.img}
                     width="100%"
-                    css={{ height: '800px', objectPosition: 'top'}}
+                    // css={}
+                    style={{ height: '800px', objectPosition: 'top'}}
                     alt={item.title}
                   />
                 </Card.Body>
                 <Card.Footer>
                   <Row wrap="wrap" justify="space-between">
                     <Text size={25} b>{item.title}</Text>
-                    
                   </Row>
                 </Card.Footer>
               </Card>

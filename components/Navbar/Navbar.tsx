@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "./Navbar.module.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [NavShow, setNavShow] = useState(false);
@@ -14,15 +14,15 @@ export default function Navbar() {
   }, [])
 
   useEffect(() => {
-      const handleScroll = e => {
-          if(e.target.innerWidth >= 1800) setBigScreen(true);
+      const handleScroll = () => {
+          if(window.innerWidth >= 1800) setBigScreen(true);
       }
       window.addEventListener('resize', handleScroll);
       return () => window.removeEventListener('resize', handleScroll)
   }, [])
 
   useEffect(() => {
-    const body = document.querySelector('body');
+    const body = document.querySelector('body')!;
     body.style.overflow = NavShow ? 'hidden' : 'unset';
   }, [NavShow])
 

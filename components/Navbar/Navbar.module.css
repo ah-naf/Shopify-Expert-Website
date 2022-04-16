@@ -1,0 +1,132 @@
+.logo {
+    object-fit: contain;
+    object-position: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 7% 20px 4%;
+    z-index: 100;
+}
+
+.navlink_container>ul>li {
+    display: inline-block;
+}
+
+.navlink_container>ul {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navlink_container {
+    margin-left: auto;
+    /* position: relative; */
+}
+
+.navlink_container>ul>li>a,
+.navlink_container>ul>button {
+    text-decoration: none;
+    color: black;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+}
+
+.navlink_container>ul>li>a:hover {
+    padding-bottom: 5px;
+    border-bottom: 3px solid black;
+}
+
+.navlink_container>ul>button {
+    padding: 12.5px 25px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: #a8db64;
+    color: white;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.navlink_container>ul>button:hover {
+    box-shadow: 8px 8px 15px #a8db64c8;
+}
+
+.hamburger,
+.menu_close {
+    display: none;
+    cursor: pointer;
+}
+
+.menu_show {
+    -webkit-clip-path: polygon(100% 100%, 100% 0, 0 0, 0% 100%) !important;
+    clip-path: polygon(100% 100%, 100% 0, 0 0, 0% 100%) !important;
+    pointer-events: unset !important;
+}
+
+@media screen and (min-width: 1800px) {
+    .navbar {
+        padding: 20px 8%;
+    }
+    .navlink_container>ul>li>a,
+    .navlink_container>ul>button {
+        font-size: 23px;
+    }
+    .Nalogo {
+        width: 300px !important;
+        height: 100px !important;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .navbar {
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        padding: 20px 20px 20px 10px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .menu_close {
+        display: block;
+        position: absolute;
+        top: 4%;
+        right: 0%;
+        transform: translateX(-50%);
+    }
+    .navlink_container>ul {
+        position: absolute;
+        top: 0%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: #e7ebea;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        -webkit-clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0);
+        clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0);
+        transition: all .3s;
+        pointer-events: none;
+    }
+    .navlink_container>ul>li>a,
+    .navlink_container>ul>button {
+        font-size: 30px;
+    }
+    .navlink_container>ul>button {
+        margin-top: 20px;
+        padding: 22.5px 25px;
+    }
+}

@@ -1,0 +1,135 @@
+.wwd {
+    background-color: #fff;
+    padding: 75px 20px;
+}
+
+.wwd_wrapper {
+    max-width: 1800px;
+    margin: auto;
+    text-align: center;
+}
+
+.wwd_wrapper>h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.wwd_wrapper>p {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.wwd_row {
+    margin-top: 50px;
+}
+
+.wwd_col {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-auto-rows: auto;
+    gap: 50px 80px;
+    max-width: 1800px;
+    margin: auto;
+}
+
+.wwd_card {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    display: grid;
+    justify-content: center;
+    gap: 50px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.85);
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05); */
+    transition: all .3s ease-in;
+}
+
+.wwd_card:hover {
+    box-shadow: 0 8px 50px -5px rgb(0 0 0 / 10%);
+    top: -2px;
+}
+
+.wwd_card>img {
+    width: 100%;
+    max-width: 400px;
+    place-self: center;
+}
+
+.wwd_card>.content {
+    align-self: flex-end;
+}
+
+.content>a {
+    text-decoration: none;
+    color: teal;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    transition: all .3s;
+}
+
+.arrow {
+    margin-left: 8px;
+    transition: all .3s;
+}
+
+.content>a:hover {
+    color: #a8db64;
+}
+
+.content>a:hover .arrow {
+    margin-left: 12px;
+}
+
+.content>h3 {
+    font-size: 25px;
+}
+
+.content>p {
+    font-family: "Ubuntu", sans-serif;
+    color: rgba(0, 0, 0, 0.85);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .wwd_wrapper>p {
+        max-width: 500px;
+        margin: auto;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .wwd_col {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    .content>h3 {
+        font-size: 20px;
+    }
+    .content>p {
+        font-size: 16px;
+    }
+    .wwd_wrapper>p {
+        font-size: 18px;
+    }
+}
+
+.wwd_wrapper>div {
+    margin: auto;
+    width: 100px;
+    height: 5px;
+    background-color: #a8db64;
+    margin-bottom: 20px;
+}

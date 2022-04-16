@@ -1,0 +1,23 @@
+.portfolio_container {
+    max-width: 1800px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.portfolio_container>.line {
+    margin: auto;
+    width: 100px;
+    height: 5px;
+    background-color: #a8db64;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.portfolio_container>h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}

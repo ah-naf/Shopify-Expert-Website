@@ -20,15 +20,7 @@
 
 .testimonials>h1 {
     font-family: "Ubuntu", sans-serif;
-    font-family: 50px;
-}
-
-@media screen and (max-width: 850px) {
-    .testimonials {
-        background-size: 80vw;
-        background-position: center 5%, bottom left;
-        font-size: 2.5rem;
-    }
+    font-size: 50px;
 }
 
 .hidden {
@@ -47,15 +39,6 @@
     text-align: center;
 }
 
-@media screen and (max-width: 850px) {
-    .testimonials>main {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-}
-
 .testimonial {
     display: -ms-grid;
     display: grid;
@@ -68,29 +51,18 @@
     background-image: url(/images/pattern-quotes.svg);
     background-repeat: no-repeat;
     background-position: 3rem 1rem;
+    padding: 0 30px;
 }
 
 .testimonial .comment {
     font-weight: 300;
-}
-
-@media screen and (max-width: 850px) {
-    .testimonial {
-        margin-right: 0;
-        text-align: center;
-        background-position: center 5rem;
-    }
+    margin-top: 50px;
 }
 
 .testimonial .user {
     font-size: 30px;
-}
-
-@media screen and (max-width: 850px) {
-    .testimonial .user {
-        display: -ms-grid;
-        display: grid;
-    }
+    display: flex;
+    flex-direction: column;
 }
 
 .testimonial .user__name {
@@ -112,29 +84,21 @@
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    left: 50%;
     bottom: 0;
-    border-radius: 5rem;
-    -webkit-transform: translate(-50%, 0%);
-    transform: translate(-50%, 0%);
-    -webkit-box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1);
-    background-color: white;
-}
-
-@media screen and (max-width: 850px) {
-    .buttons {
-        left: 50%;
-        -webkit-transform: translate(-50%, 00%) scale(0.8);
-        transform: translate(-50%, 00%) scale(0.8);
-    }
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    align-items: center;
 }
 
 .buttons button {
     background: none;
     background-color: white;
     border: none;
-    padding: 1.75rem 3rem;
+    padding: 1.25rem;
+    -webkit-box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
 }
 
 .buttons button:hover {
@@ -143,13 +107,46 @@
 }
 
 .buttons .prev {
-    padding-right: 2rem;
+    padding-right: 1.5rem;
     border-bottom-left-radius: 5rem;
     border-top-left-radius: 5rem;
+    transform: translateX(-100%);
 }
 
 .buttons .next {
-    padding-left: 2rem;
+    padding-left: 1.5rem;
     border-bottom-right-radius: 5rem;
     border-top-right-radius: 5rem;
+    left: 100%;
+}
+
+.pattern {
+    position: absolute;
+}
+
+@media screen and (max-width: 1300px) {
+    .testimonials {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .buttons {
+        width: unset;
+        position: relative;
+        justify-content: center;
+    }
+    .buttons button {
+        top: 0;
+        left: 0 !important;
+        right: 0 !important;
+        transform: translate(0, 0) !important;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .comment {
+        margin-top: 125px !important;
+    }
 }

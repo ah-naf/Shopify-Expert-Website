@@ -48,8 +48,7 @@ export default function WWD() {
         <h1>What We Do</h1>
         <div></div>
         <p>
-          We offer a variety of services for shopify, and do it at an affordable
-          price
+        Get a complete SEO to rank your website top position on the google.
         </p>
       </div>
       <div className={styles.wwd_row}>

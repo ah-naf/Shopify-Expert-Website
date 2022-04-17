@@ -10,7 +10,7 @@ export default function Experience() {
       <div className={styles.row}>
         <div className={styles.col}>
           <div className={`${styles.icon}`}>
-            <Image src={"/gif1.gif"} width={200} height={200}></Image>
+            <Image src={"/gif1.png"} width={200} height={200}></Image>
           </div>
           <h3>223</h3>
           <p>Projects Completed</p>
@@ -18,7 +18,7 @@ export default function Experience() {
 
         <div className={styles.col}>
           <div className={styles.icon}>
-            <Image src={"/gif2.gif"} width={200} height={200}></Image>
+            <Image src={"/gif2.png"} width={200} height={200}></Image>
           </div>
           <h3>223</h3>
           <p>Happy Client</p>
@@ -26,7 +26,7 @@ export default function Experience() {
 
         <div className={styles.col}>
           <div className={styles.icon}>
-            <Image src={"/gif3.gif"} width={200} height={200}></Image>
+            <Image src={"/gif3.png"} width={200} height={200}></Image>
           </div>
           <h3>
             Moneyback <br />
@@ -36,7 +36,7 @@ export default function Experience() {
 
         <div className={styles.col}>
           <div className={styles.icon}>
-            <Image src={"/gif4.gif"} width={200} height={200}></Image>
+          <Image src={"/gif4.png"} width={200} height={200}></Image>
           </div>
           <h3>100%</h3>
           <p>Satisfaction</p>
@@ -44,7 +44,7 @@ export default function Experience() {
 
         <div className={styles.col}>
           <div className={styles.icon}>
-            <Image src={"/gif5.gif"} width={200} height={200}></Image>
+            <Image src={"/gif5.png"} width={200} height={200}></Image>
           </div>
           <h3>24/7</h3>
           <p>Support</p>
